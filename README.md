@@ -33,7 +33,7 @@ free [IEX Cloud API](https://iexcloud.io/).
 
     ```bash
     $ getquote GOOG
-    2020/08/30 00:01:08 GOOG $1644.41
+    2020/08/30 09:56:54-0400 GOOG $1644.41
     ```
 
 ## Maintenance

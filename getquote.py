@@ -35,7 +35,7 @@ def ledger_format(symbol: str) -> str:
     Returns:
       Ledger-Cli Price db entry for the quote.
     """
-    date = datetime.now().strftime('%Y/%m/%d %H:%M:%S')
+    date = datetime.now().astimezone().strftime('%Y/%m/%d %H:%M:%S%z')
     price = quote(symbol)
     return f'{date} {symbol} ${price}'
 
