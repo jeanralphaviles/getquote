@@ -13,7 +13,7 @@ free [IEX Cloud API](https://iexcloud.io/).
 1. Install `getquote`:
 
     ```bash
-    pip3 install getquote --prefix /usr/local
+    pip install --upgrade getquote --prefix /usr/local
     ```
 
 1. Create a `getquote.ini` config file in your ledger directory.
@@ -41,7 +41,7 @@ free [IEX Cloud API](https://iexcloud.io/).
 ### Uploading new packages to PyPi
 
 ```bash
-pip install twine
+pip install --upgrade twine
 ./setup.py sdist
 twine upload dist/getquote-*.tar.gz
 ```
