@@ -23,6 +23,12 @@ free [IEX Cloud API](https://iexcloud.io/).
     TOKEN = <your publishable IEX API token here>
     ```
 
+    * Alternatively, set the `IEX_TOKEN` environment variable.
+
+    ```bash
+    export IEX_TOKEN=pk_deadbeefdeadbeefdeadbeefdeadbeef
+    ```
+
 1. Test
 
     ```bash

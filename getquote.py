@@ -2,14 +2,15 @@
 """getquote script for ledger-cli."""
 
 import configparser
+import os
 import sys
 from urllib import error
 from urllib import request
 from datetime import datetime
 
 cfg = configparser.ConfigParser()
-cfg.read_file(open('getquote.ini'))
-IEX_TOKEN = cfg.get('IEX', 'TOKEN')
+cfg.read('getquote.ini')
+IEX_TOKEN = os.getenv('IEX_TOKEN') or cfg.get('IEX', 'TOKEN')
 
 def quote(symbol: str) -> int:
     """Returns the current price of a security.
