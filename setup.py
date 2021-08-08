@@ -2,18 +2,18 @@
 
 from setuptools import setup
 
+
 def readme():
     with open('README.md') as f:
         return f.read()
+
 
 setup(
     name='getquote',
     version='1.2.0',
     scripts=['getquote.py'],
     entry_points={
-        'console_scripts': [
-            'getquote = getquote:main',
-        ],
+        'console_scripts': ['getquote = getquote:main',],
     },
     author='Jean-Ralph Aviles',
     author_email='jeanralph.aviles@gmail.com',
@@ -21,7 +21,10 @@ setup(
     long_description=readme(),
     long_description_content_type='text/markdown',
     keywords=' '.join([
-        'ledger-cli', 'personal', 'finance', 'stocks',
+        'ledger-cli',
+        'personal',
+        'finance',
+        'stocks',
     ]),
     url='https://github.com/jeanralphaviles/getquote',
     license='MIT',

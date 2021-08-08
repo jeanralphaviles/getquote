@@ -12,6 +12,7 @@ cfg = configparser.ConfigParser()
 cfg.read('getquote.ini')
 IEX_TOKEN = os.getenv('IEX_TOKEN') or cfg.get('IEX', 'TOKEN')
 
+
 def quote(symbol: str) -> int:
     """Returns the current price of a security.
 
@@ -27,6 +28,7 @@ def quote(symbol: str) -> int:
     except error.HTTPError as exp:
         raise LookupError(f'Unable to quote "{symbol}"') from exp
 
+
 def ledger_format(symbol: str) -> str:
     """Returns a quote formated for ledger-cli.
 
@@ -39,10 +41,12 @@ def ledger_format(symbol: str) -> str:
     price = quote(symbol)
     return f'{date} {symbol} ${price}'
 
+
 def main():
     """Entrypoint for getquote."""
     symbol = sys.argv[1]
     print(ledger_format(symbol))
+
 
 if __name__ == '__main__':
     main()
