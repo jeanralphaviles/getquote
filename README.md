@@ -3,6 +3,11 @@
 ![GitHub](https://img.shields.io/github/license/jeanralphaviles/getquote)
 [![PyPI](https://img.shields.io/pypi/v/getquote)](https://pypi.org/project/getquote/)
 
+> [!IMPORTANT]
+> The IEX Cloud API was turned down in August 2024,
+> [announcement](https://web.archive.org/web/20241225051706/https://finazon.io/blog/iex-cloud-is-gone-why).
+> This repository has been archived.
+
 A [ledger-cli](https://www.ledger-cli.org) getquote implementation using the
 free [IEX Cloud API](https://iexcloud.io/).
 
